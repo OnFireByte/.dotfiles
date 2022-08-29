@@ -1,0 +1,13 @@
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[user]
+	name = Pakin Puttanukulchai
+	email = 65996113+OnFireByte@users.noreply.github.com
+[maintenance]
+	repo = /Users/byte/Git/zsh-snap
+	repo = /Users/byte/Git/zsh-autocomplete
+[init]
+	defaultBranch = main
