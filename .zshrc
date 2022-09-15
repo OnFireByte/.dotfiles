@@ -122,7 +122,7 @@ alias wine="CX_BOTTLE='Logic Works' wine"
 alias ls="lsd"
 alias nf="neofetch"
 
-alias fa='cd $(fd . $HOME --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | fzf)'
+alias fa='cd "$(fd . $HOME --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | fzf)"'
 alias f='cd $(fd --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | fzf)'
 
 alias codefa='code $(fd . $HOME --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv  | fzf)'
