@@ -11,3 +11,5 @@
 	repo = /Users/byte/Git/zsh-autocomplete
 [init]
 	defaultBranch = main
+[core]
+	excludesfile = /Users/byte/.gitignore_global
