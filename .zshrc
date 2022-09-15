@@ -156,5 +156,10 @@ export NVM_DIR="$HOME/.nvm"
 
 PATH="/usr/local/bin:$PATH"
 
+# pnpm
+export PNPM_HOME="/Users/byte/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
