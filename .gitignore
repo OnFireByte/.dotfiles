@@ -1,2 +1,4 @@
 node_modules
 .config/jgit/config
+.config/peazip/conf-lastgood.txt
+.config/peazip/conf.txt
