@@ -84,7 +84,7 @@ default.txt
 
 [save history of recent archives]
 1
-/Users/byte/Downloads/Logic Works 5.rar
+/Users/byte/Documents/55536F4E6F7379.zip
 
 
 
@@ -215,7 +215,7 @@ Deflate
 1
 
 [last output path]
-/Users/byte/Desktop/
+/Users/byte/Documents/
 
 [height of the navigation's splitter]
 220
@@ -315,10 +315,10 @@ PeaZip
 0
 
 [last successful extraction path]
-
+/Users/byte/Downloads/
 
 [encrypt also filenames, if the feature is supported by the format]
-0
+1
 
 [ignore archived path structure when performing custom drag and drop extraction]
 0
@@ -409,9 +409,9 @@ PeaZip
 0
 
 [save history of recent directories]
-/Users/byte/Downloads/Logic Works 5.rar
+/Users/byte/Documents/55536F4E6F7379.zip
+/Users/byte/Documents/
 /Users/byte/Downloads/
-
 
 
 

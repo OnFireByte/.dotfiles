@@ -32,7 +32,7 @@ default.txt
 18
 
 [last used archiving format]
-15
+0
 
 [default PEA compression level]
 1
@@ -53,7 +53,7 @@ default.txt
 1
 
 [show password field in clear]
-0
+1
 
 [ask for password on extract/list/test operations from system's menus]
 3
@@ -84,7 +84,7 @@ default.txt
 
 [save history of recent archives]
 1
-
+/Users/byte/Documents/626F77.7z
 
 
 
@@ -215,7 +215,7 @@ Deflate
 1
 
 [last output path]
-/Users/byte/Downloads/
+/Users/byte/Documents/
 
 [height of the navigation's splitter]
 220
@@ -318,7 +318,7 @@ PeaZip
 /Users/byte/Downloads/
 
 [encrypt also filenames, if the feature is supported by the format]
-0
+1
 
 [ignore archived path structure when performing custom drag and drop extraction]
 0
@@ -410,8 +410,8 @@ PeaZip
 
 [save history of recent directories]
 <none>
+/Users/byte/Documents/
 /Users/byte/Downloads/
-
 
 
 
@@ -541,10 +541,10 @@ PeaZip
 2
 
 [advanced 7z/p7zip compression settings]
-0
 4
-0
-8
+4
+-1
+11
 
 [auto close PeaZip when task completes]
 0
