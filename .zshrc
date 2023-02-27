@@ -122,17 +122,18 @@ alias wine="CX_BOTTLE='Logic Works' wine"
 alias ls="lsd"
 alias nf="neofetch"
 
-alias fa='cd "$(fd . $HOME --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | fzf)"'
-alias f='cd $(fd --type d --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | fzf)'
+alias fa='cd "$(fd . $HOME --type d --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | fzf)"'
+alias faf='cd "$(fd . / --type d --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | fzf)"'
+alias f='cd $(fd --type d --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | fzf)'
 
-alias codefa='code $(fd . $HOME --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv  | fzf)'
-alias codef='code $(fd --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv  | fzf)'
+alias codefa='code $(fd . $HOME --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv  | fzf)'
+alias codef='code $(fd --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv  | fzf)'
 alias m="micro"
-alias mfa='m $(fd . $HOME --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv  | fzf)'
-alias mf='m $(fd --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv  | fzf)'
+alias mfa='m $(fd . $HOME --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv  | fzf)'
+alias mf='m $(fd --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv  | fzf)'
 
 alias vim="lvim"
-alias vimfa='vim $(fd . $HOME --hidden --exclude .git --exclude node_module --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv  | fzf)'
+alias vimfa='vim $(fd . $HOME --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv  | fzf)'
 
 
 
@@ -148,7 +149,7 @@ alias motd='echo "
 ╚═════╝░░░░╚═╝░░░░░░╚═╝░░░╚══════╝░░░░░░╚═╝░░░░░╚═╝╚══════╝
 " | lolcat --seed 6'
 
-motd
+nf
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

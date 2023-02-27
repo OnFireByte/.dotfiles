@@ -1,0 +1,45 @@
+{
+	"analytics-uuid": "363e763f-b478-48ca-939d-704a4782fdd1",
+	"motd": {
+		"cloudBuildErrorAfter": 1594252800000,
+		"cloudBuildWarnAfter": 1590019200000,
+		"defaultNode10After": 1594252800000,
+		"minVersion": "3.0.5",
+		"node8DeploysDisabledAfter": 1613390400000,
+		"node8RuntimeDisabledAfter": 1615809600000,
+		"node8WarnAfter": 1600128000000,
+		"fetched": 1677039297666
+	},
+	"usage": true,
+	"user": {
+		"iss": "accounts.google.com",
+		"azp": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"aud": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"sub": "107362795823449191182",
+		"email": "x.kill.gaming1199@gmail.com",
+		"email_verified": true,
+		"at_hash": "EUMdvFQuZZKexXrRK6e7Mg",
+		"iat": 1677039458,
+		"exp": 1677043058
+	},
+	"tokens": {
+		"expires_at": 1677045807693,
+		"refresh_token": "1//0gC6fy-3zACDACgYIARAAGBASNwF-L9IrwwUGVK6zb_xd5JtdgmUevu1wD1Fh0bopuiW3uAqbfzmGIFhwxKcmCPmsb-qm4pgFXvQ",
+		"scopes": [],
+		"access_token": "ya29.a0AVvZVsodQbR5tpAJW9k7zUYASrpKFBtKYPFZB1t4sx4-Gbjj02mcpIJWAd0UKSO1BCmUztzp-sJ2JKDrwdpTCNifuuWhb06iVjoYMy_VJwdOLrw7h5iO1qM0kGEK0kJc-zgVSk_OxS4AB9cu3xKFeQqzDRtiYNAYGZsOaCgYKASsSAQASFQGbdwaIkaEZxPY0wRUNIvg-wuIB1w0171",
+		"expires_in": 3599,
+		"scope": "https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/cloudplatformprojects.readonly openid",
+		"token_type": "Bearer",
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU5NjJlN2EwNTljN2Y1YzBjMGQ1NmNiYWQ1MWZlNjRjZWVjYTY3YzYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA3MzYyNzk1ODIzNDQ5MTkxMTgyIiwiZW1haWwiOiJ4LmtpbGwuZ2FtaW5nMTE5OUBnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXRfaGFzaCI6ImFjeUtRLWlSMVVXY2NjOTNvVjA1OWciLCJpYXQiOjE2NzcwNDIyMDgsImV4cCI6MTY3NzA0NTgwOH0.Ec51KykzhC1dxaH2T0tFM6DOj_V2XS5ns2xlMe_hZybctBaNHFP7F_Bkx4-eFGg5yh541Ugcz4v0lU0M5mmOsfkhzEOWE3gCeP4sre-PTO57IE5a5FmhuYFRYoNQp7N6AjEy_HqdPPtGPkiOX5d4OIhI0ML9l_xp6Rn3_W2MVCDcwEfJocBB20OUB6lX8j0Pd2hHqd73uyJa52Dj6OAKcC7cfLuCp-wAPJ-WOKJzJOySVknODe8vZwg9xGHBcelzP5sDbdrrJjEkgGBNfgv-LtTy9EtrMiZqVcHVt8UEoUIlemqV0KA0CNYCDdgK_v4GmYCdobw-wdQiH2oCQY2SwA"
+	},
+	"loginScopes": [
+		"email",
+		"openid",
+		"https://www.googleapis.com/auth/cloudplatformprojects.readonly",
+		"https://www.googleapis.com/auth/firebase",
+		"https://www.googleapis.com/auth/cloud-platform"
+	],
+	"activeProjects": {
+		"/Users/byte/Playground/js/pedometer/pedometer_app": "compengess-6430282121"
+	}
+}
