@@ -9,7 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export GOPATH=$HOME/go
 export PATH=/Users/byte/.nimble/bin:$PATH
 export PATH_TO_FX=$HOME/javafx/lib
-PATH=$GOPATH/bin:$PATH
+export PATH=$GOPATH:$GOPATH/bin:$PATH
 export PATH=/opt/homebrew/bin:$PATH
 
 
@@ -132,7 +132,9 @@ alias m="micro"
 alias mfa='m $(fd . $HOME --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv  | fzf)'
 alias mf='m $(fd --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv  | fzf)'
 
-alias vim="lvim"
+alias pg='cd $HOME/playground/$(fd . $HOME/playground --type d --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv -d 2 | sed -e "s|^/Users/byte/playground/||" -e "s/\/$//" | fzf)'
+
+# alias vim="lvim"
 alias vimfa='vim $(fd . $HOME --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv  | fzf)'
 
 
@@ -161,6 +163,18 @@ PATH="/usr/local/bin:$PATH"
 export PNPM_HOME="/Users/byte/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+[[ -s "/Users/byte/.gvm/scripts/gvm" ]] && source "/Users/byte/.gvm/scripts/gvm"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+export PATH=$PATH:/Users/byte/.spicetify
+
+# bun completions
+[ -s "/Users/byte/.bun/_bun" ] && source "/Users/byte/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"

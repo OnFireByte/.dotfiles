@@ -7,5 +7,8 @@ export PATH=/Users/byte/.nimble/bin:$PATH
 export PATH="$PATH:/Users/byte/Library/Application Support/Coursier/bin"
 # <<< coursier install directory <<<
 
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/profile.post.bash" ]] && builtin source "$HOME/.fig/shell/profile.post.bash"
