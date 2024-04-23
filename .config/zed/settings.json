@@ -7,7 +7,11 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "theme": "Gruvbox Dark",
   "buffer_font_size": 18,
-  "buffer_font_family": "JetbrainsMono Nerd font",
+  "buffer_font_family": "Geist Mono",
+  "ui_font_family": "Geist Mono",
+  "autosave": "on_focus_change",
+  "format_on_save": "on"
   // "vim_mode": true
 }

@@ -1,5 +1,5 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+# CodeWhisperer pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.pre.zsh"
 # source ~/Git/zsh-snap/znap.zsh
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -117,6 +117,8 @@ source $ZSH/oh-my-zsh.sh
 alias python="python3"
 alias pip="pip3"
 
+alias ff="cd"
+
 alias wine="CX_BOTTLE='Logic Works' wine"
 
 alias ls="lsd"
@@ -132,7 +134,9 @@ alias m="micro"
 alias mfa='m $(fd . $HOME --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv  | fzf)'
 alias mf='m $(fd --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv  | fzf)'
 
-alias pg='cd $HOME/playground/$(fd . $HOME/playground --type d --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv -d 2 | sed -e "s|^/Users/byte/playground/||" -e "s/\/$//" | fzf)'
+alias fp='cd $HOME/playground/$(fd . $HOME/playground --type d --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv -d 2 | sed -e "s|^/Users/byte/playground/||" -e "s/\/$//" | fzf)'
+
+alias work='code $HOME/playground/$(fd . $HOME/playground --type f --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | sed -e "s|^/Users/byte/playground/||" -e "s/\/$//" | grep "\.code-workspace$" | fzf)'
 
 # alias vim="lvim"
 alias vimfa='vim $(fd . $HOME --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv  | fzf)'
@@ -176,5 +180,26 @@ export PATH=$PATH:/Users/byte/.spicetify
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+eval "$(zoxide init zsh --cmd cd)"
+
+
+[[ -f "$HOME/fig-export/dotfiles/dotfile.zsh" ]] && builtin source "$HOME/fig-export/dotfiles/dotfile.zsh"
+
+# CodeWhisperer post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/codewhisperer/shell/zshrc.post.zsh"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

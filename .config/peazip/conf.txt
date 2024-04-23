@@ -44,7 +44,7 @@ default.txt
 4
 
 [default PEA stream level control algorithm]
-0
+3
 
 [default integrity check algorithm for file split]
 13
@@ -84,7 +84,7 @@ default.txt
 
 [save history of recent archives]
 1
-/Users/byte/Documents/626F77.7z
+/Users/byte/Downloads/cds copy.zip
 
 
 
@@ -114,10 +114,10 @@ default.txt
 0
 
 [left]
-118
+120
 
 [top]
-120
+44
 
 [width]
 1024
@@ -215,7 +215,7 @@ Deflate
 1
 
 [last output path]
-/Users/byte/Documents/
+/Users/byte/Downloads/
 
 [height of the navigation's splitter]
 220
@@ -340,7 +340,7 @@ PeaZip
 0
 
 [search history]
-
+CDS/CDS/*
 
 
 
@@ -409,9 +409,9 @@ PeaZip
 0
 
 [save history of recent directories]
-<none>
-/Users/byte/Documents/
+/Users/byte/Downloads/cds copy.zip
 /Users/byte/Downloads/
+/Users/byte/Documents/
 
 
 

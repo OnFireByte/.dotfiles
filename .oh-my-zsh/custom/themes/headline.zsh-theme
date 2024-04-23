@@ -91,20 +91,20 @@ HEADLINE_DO_GIT_STATUS='true'
 HEADLINE_PROMPT="❯ " # consider "%#"
 
 # Repeated characters (no styles here)
-HEADLINE_LINE_CHAR='_' # line above information
+HEADLINE_LINE_CHAR='.' # line above information
 HEADLINE_PAD_CHAR=' ' # space between <path> and <branch>
 
 # Prefixes (optional)
 HEADLINE_USER_PREFIX='' # consider " "
 HEADLINE_HOST_PREFIX='' # consider " "
 HEADLINE_PATH_PREFIX='' # consider " "
-HEADLINE_BRANCH_PREFIX=' ' # consider " "
+HEADLINE_BRANCH_PREFIX=' ' # consider " "
 
 # Joints
 HEADLINE_USER_BEGIN=''
 if [ $IS_SSH = 0 ]; then HEADLINE_USER_BEGIN='=> '; fi
 HEADLINE_USER_TO_HOST=' @ '
-HEADLINE_HOST_TO_PATH=': '
+HEADLINE_HOST_TO_PATH=' : '
 HEADLINE_PATH_TO_BRANCH=' | ' # only used when no padding between <path> and <branch>
 HEADLINE_PATH_TO_PAD='' # used if padding between <path> and <branch>
 HEADLINE_PAD_TO_BRANCH='' # used if padding between <path> and <branch>
@@ -145,7 +145,7 @@ HEADLINE_GIT_BEHIND='↓'
 HEADLINE_GIT_AHEAD='↑'
 HEADLINE_GIT_DIVERGED='↕'
 HEADLINE_GIT_STASHED='*'
-HEADLINE_GIT_CONFLICTS='✘' # consider "%{$red%}✘"
+HEADLINE_GIT_CONFLICTS='%{$red%}✘' # consider "%{$red%}✘"
 HEADLINE_GIT_CLEAN='' # consider "✓" or "✔"
 
 # ------------------------------------------------------------------------------

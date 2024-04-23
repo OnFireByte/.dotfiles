@@ -14,3 +14,8 @@ ln -sf ~/.dotfiles/.oh-my-zsh/custom ~/.oh-my-zsh/
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 # install brew package
 brew bundle --file ~/.dotfiles/Brewfile
+
+# add colemak-dh layout
+cp -r ~/.dotfiles/Colemak\ DH.bundle ~/Library/Keyboard\ Layouts/
+
+echo "Done! Please restart the machine."
