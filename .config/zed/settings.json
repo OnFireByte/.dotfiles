@@ -12,6 +12,7 @@
   "buffer_font_family": "Geist Mono",
   "ui_font_family": "Geist Mono",
   "autosave": "on_focus_change",
-  "format_on_save": "on"
-  // "vim_mode": true
+  "format_on_save": "on",
+  "vim_mode": true,
+  "relative_line_numbers": true
 }
