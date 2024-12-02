@@ -12,16 +12,16 @@
 
 ######## Recent display filters (latest last), cannot be altered through command line ########
 
-recent.display_filter: ip.addr == 1.1.1.1
+recent.display_filter: ip.src==192.168.1.8
+recent.display_filter: tcp.port == 25565
+recent.display_filter: tcp.port==25565
+recent.display_filter: ip.addr==144.24.138.249
+recent.display_filter: ip.dst==144.24.138.249
+recent.display_filter: ip.dst
+recent.display_filter: ip.addr == 192.168.1.8
+recent.display_filter: ip.addr == 192.168.1.1
+recent.display_filter: ip.addr == 144.24.138.249
 recent.display_filter: ip.addr == 173.194.115.178
-recent.display_filter: ip.addr == 216.58.216.35
-recent.display_filter: udp
-recent.display_filter: tcp
-recent.display_filter: ip.addr == 10.203.209.95
-recent.display_filter: ip.addr == 216.58.200.4
-recent.display_filter: ip.addr == 3.33.235.18
-recent.display_filter: http2
-recent.display_filter: http
 
 # Main window geometry.
 # Decimal numbers.
@@ -86,6 +86,24 @@ gui.geom.FilterDialog.width: 960
 gui.geom.FilterDialog.height: 564
 # TRUE or FALSE (case-insensitive).
 gui.geom.FilterDialog.maximized: FALSE
+
+# Geometry and maximized state of DisplayFilterExpressionDialog window.
+# Decimal integers.
+gui.geom.DisplayFilterExpressionDialog.x: 250
+gui.geom.DisplayFilterExpressionDialog.y: 185
+gui.geom.DisplayFilterExpressionDialog.width: 920
+gui.geom.DisplayFilterExpressionDialog.height: 502
+# TRUE or FALSE (case-insensitive).
+gui.geom.DisplayFilterExpressionDialog.maximized: FALSE
+
+# Geometry and maximized state of PreferencesDialog window.
+# Decimal integers.
+gui.geom.PreferencesDialog.x: 381
+gui.geom.PreferencesDialog.y: 211
+gui.geom.PreferencesDialog.width: 680
+gui.geom.PreferencesDialog.height: 554
+# TRUE or FALSE (case-insensitive).
+gui.geom.PreferencesDialog.maximized: FALSE
 
 # Custom colors.
 # List of custom colors selected in Qt color picker.

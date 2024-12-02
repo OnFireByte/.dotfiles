@@ -13,3 +13,5 @@
 	defaultBranch = main
 [core]
 	excludesfile = /Users/byte/.gitignore_global
+[gitbutler]
+	aiModelProvider = anthropic

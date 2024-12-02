@@ -1,0 +1,36 @@
+theme = "pkgruv"
+
+[editor]
+true-color=true
+color-modes=true
+jump-label-alphabet="arstoiengmdhfuplwy"
+
+[editor.cursor-shape]
+insert="bar"
+
+[editor.lsp]
+display-messages=true
+
+[editor.indent-guides]
+render = true
+
+[editor.statusline]
+mode.normal = "NRML"
+mode.insert = "INST"
+mode.select = "SLCT"
+
+[keys.normal]
+h = "move_line_down"
+j = "move_char_left"
+"tab" = ":format"
+
+[keys.normal.g]
+o = "jump_backward"
+u = "goto_definition"
+
+[keys.normal.space]
+f = "file_picker_in_current_directory"
+F = "file_picker"
+
+[keys.insert]
+"C-k" = "hover"

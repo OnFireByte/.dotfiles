@@ -11,6 +11,9 @@ export PATH=/Users/byte/.nimble/bin:$PATH
 export PATH_TO_FX=$HOME/javafx/lib
 export PATH=$GOPATH:$GOPATH/bin:$PATH
 export PATH=/opt/homebrew/bin:$PATH
+export PATH=/Users/byte/.local/bin:$PATH
+export PATH="/opt/homebrew/opt/binutils/bin:$PATH"
+export PATH="$PATH:/Applications/WezTerm.app/Contents/MacOS"
 
 
 # Set name of the theme to load --- if set to "random", it will
@@ -19,7 +22,7 @@ export PATH=/opt/homebrew/bin:$PATH
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="common"
-ZSH_THEME="headline"
+# ZSH_THEME="headline"
 
 
 # Set list of themes to pick from when loading at random
@@ -146,21 +149,12 @@ alias vimfa='vim $(fd . $HOME --hidden --exclude .git --exclude node_modules --e
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # eval "$(starship init zsh)"
-alias motd='echo "
-██████╗░██╗░░░██╗████████╗███████╗░░░░░░███╗░░░███╗░░███╗░░
-██╔══██╗╚██╗░██╔╝╚══██╔══╝██╔════╝░░░░░░████╗░████║░████║░░
-██████╦╝░╚████╔╝░░░░██║░░░█████╗░░█████╗██╔████╔██║██╔██║░░
-██╔══██╗░░╚██╔╝░░░░░██║░░░██╔══╝░░╚════╝██║╚██╔╝██║╚═╝██║░░
-██████╦╝░░░██║░░░░░░██║░░░███████╗░░░░░░██║░╚═╝░██║███████╗
-╚═════╝░░░░╚═╝░░░░░░╚═╝░░░╚══════╝░░░░░░╚═╝░░░░░╚═╝╚══════╝
-" | lolcat --seed 6'
+# nf
 
-nf
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#
 PATH="/usr/local/bin:$PATH"
 
 # pnpm
@@ -198,5 +192,20 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+PATH=$(pyenv root)/shims:$PATH
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 # Q post block. Keep at the bottom of this file.
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
+# [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/byte/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
+export EDITOR="hx"
+
+eval "$(starship init zsh)"

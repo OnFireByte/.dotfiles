@@ -3,3 +3,4 @@ node_modules
 .config/peazip/conf-lastgood.txt
 .config/peazip/conf.txt
 .config/github-copilot
+.config/.DS_Store

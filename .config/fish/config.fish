@@ -1,4 +1,3 @@
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 if test -f /opt/miniconda3/bin/conda
@@ -12,3 +11,7 @@ else
 end
 # <<< conda initialize <<<
 
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+set --export --prepend PATH "/Users/byte/.rd/bin"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
