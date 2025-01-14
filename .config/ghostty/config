@@ -1,0 +1,21 @@
+theme = GruvboxDark
+
+font-family = Geist Mono Medium
+# font-family = Berkeley Mono Trial
+font-size = 16
+macos-option-as-alt = true
+
+keybind = cmd+t=unbind
+keybind = cmd+one=text:\x1b1
+keybind = cmd+two=text:\x1b2
+keybind = cmd+three=text:\x1b3
+keybind = cmd+four=text:\x1b4
+keybind = cmd+five=text:\x1b5
+keybind = cmd+six=text:\x1b6
+keybind = cmd+seven=text:\x1b7
+keybind = cmd+eight=text:\x1b8
+keybind = cmd+nine=text:\x1b9
+keybind = cmd+w=unbind
+
+clipboard-read = allow
+clipboard-write = allow

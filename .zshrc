@@ -120,7 +120,6 @@ source $ZSH/oh-my-zsh.sh
 alias python="python3"
 alias pip="pip3"
 
-alias ff="cd"
 
 alias wine="CX_BOTTLE='Logic Works' wine"
 
@@ -138,6 +137,9 @@ alias mfa='m $(fd . $HOME --hidden --exclude .git --exclude node_modules --exclu
 alias mf='m $(fd --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv  | fzf)'
 
 alias fp='cd $HOME/playground/$(fd . $HOME/playground --type d --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv -d 2 | sed -e "s|^/Users/byte/playground/||" -e "s/\/$//" | fzf)'
+
+
+alias ff='cd $HOME/playground/$(fd . $HOME/playground --type d --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | sed -e "s|^/Users/byte/playground/||" -e "s/\/$//" | fzf)'
 
 alias work='code $HOME/playground/$(fd . $HOME/playground --type f --hidden --exclude .git --exclude node_modules --exclude .cache --exclude .npm --exclude .mozilla --exclude .meteor --exclude .nv | sed -e "s|^/Users/byte/playground/||" -e "s/\/$//" | grep "\.code-workspace$" | fzf)'
 
@@ -209,3 +211,15 @@ export PATH="/Users/byte/.rd/bin:$PATH"
 export EDITOR="hx"
 
 eval "$(starship init zsh)"
+
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+[[ ! -r '/Users/byte/.opam/opam-init/init.zsh' ]] || source '/Users/byte/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+# END opam configuration
+
+
+# eval "$(zellij setup --generate-auto-start zsh)"

@@ -1,3 +1,4 @@
 inherits = "gruvbox"
 
+
 "ui.text.focus" = {"bg" = "#393939"}

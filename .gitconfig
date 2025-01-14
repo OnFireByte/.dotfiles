@@ -15,3 +15,5 @@
 	excludesfile = /Users/byte/.gitignore_global
 [gitbutler]
 	aiModelProvider = anthropic
+[credential]
+	helper = osxkeychain

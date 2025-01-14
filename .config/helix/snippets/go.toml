@@ -1,0 +1,14 @@
+[[snippets]]
+prefix = "iferr"
+scope = [ "go" ]
+body = """if err != nil {
+  $1
+}"""
+
+
+[[snippets]]
+prefix = "meth"
+scope = [ "go" ]
+body = """func (${1:self} ${2:type}) ${3:name}(${4:args}) ${5:type} {
+  $6
+}"""

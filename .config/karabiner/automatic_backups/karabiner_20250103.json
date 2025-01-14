@@ -21,7 +21,7 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "e",
+                                    "key_code": "d",
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [
@@ -41,7 +41,7 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "r",
+                                    "key_code": "f",
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [
@@ -76,7 +76,7 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "d",
+                                    "key_code": "e",
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [
@@ -96,7 +96,7 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "f",
+                                    "key_code": "r",
                                     "modifiers": { "optional": ["any"] }
                                 },
                                 "to": [
