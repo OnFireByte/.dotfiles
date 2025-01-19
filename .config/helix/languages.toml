@@ -39,3 +39,8 @@ formatter = { command = "ocamlformat", args = [
 [[language]]
 name = "typescript"
 language-servers = ["typescript-language-server", "vscode-eslint-language-server"]
+
+
+[language-server.clangd]
+# args = [ "-std=c++11", "-Wc++11-extensions" ]
+config = { "fallbackFlags" = [ "-std=c++11", "-Wc++11-extensions" ] }

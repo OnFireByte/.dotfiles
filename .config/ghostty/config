@@ -6,6 +6,7 @@ font-size = 16
 macos-option-as-alt = true
 
 keybind = cmd+t=unbind
+keybind = cmd+n=unbind
 keybind = cmd+one=text:\x1b1
 keybind = cmd+two=text:\x1b2
 keybind = cmd+three=text:\x1b3
@@ -16,6 +17,8 @@ keybind = cmd+seven=text:\x1b7
 keybind = cmd+eight=text:\x1b8
 keybind = cmd+nine=text:\x1b9
 keybind = cmd+w=unbind
+keybind = cmd+o=text:\x1bo
+keybind = cmd+i=text:\x1bi
 
 clipboard-read = allow
 clipboard-write = allow

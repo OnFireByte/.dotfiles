@@ -60,7 +60,8 @@ l = ["goto_line_end", ":append-output echo ';'"]
 [keys.normal.space.t]
 t = ":sh zellij run -c -f -x 5% -y 5% --width 90% --height 90% -- bash ~/.config/helix/yazi-picker.sh open"
 f = "@:sh zellij run -c -f -x 5% -y 5% --width 90% --height 90% -- bash ~/.config/helix/yazi-picker.sh <C-r>%<C-w> open<ret>"
-g = ":sh zellij run -c -f -x 5% -y 5% --width 90% --height 90% -- bash ~/.config/helix/lazygit-picker.sh open"
+g = [":new", ":sh zellij run -fc -x 5% -y 5% --height 90% --width 90% -- gitui", ":buffer-close!", ":redraw"]
+
 [keys.insert]
 "C-k" = "hover"
 # j = { j = "normal_mode" }

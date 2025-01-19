@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-paths=$(lazygit | while read -r; do printf "%q " "$REPLY"; done)
+paths=$(gitui | while read -r; do printf "%q " "$REPLY"; done)
 
 if [[ -n "$paths" ]]; then
 	zellij action toggle-floating-panes
