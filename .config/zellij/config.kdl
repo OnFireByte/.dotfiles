@@ -1,6 +1,6 @@
 // If you'd like to override the default keybindings completely, be sure to change "keybinds" to "keybinds clear-defaults=true"
 keybinds {
-    unbind "Alt o" "Alt i"
+    unbind "Alt o" "Alt i" "Alt n" "Alt e"
     
     normal {
         // uncomment this and adjust key if using copy_on_select=false
@@ -236,11 +236,14 @@ load_plugins {
   // "file:/path/to/my-plugin.wasm"
   // "https://example.com/my-plugin.wasm"
   
-    "https://github.com/dj95/zjstatus/releases/latest/download/zjframes.wasm" {
-        // hide_frame_for_single_pane       "true"
-        // hide_frame_except_for_search     "true"
-        // hide_frame_except_for_fullscreen "true"
-    }
+    // "https://github.com/dj95/zjstatus/releases/latest/download/zjframes.wasm" {
+    //     // hide_frame_for_single_pane       "true"
+    //     // hide_frame_except_for_search     "true"
+    //     // hide_frame_except_for_fullscreen "true"
+    // }
+
+    "file:~/zjframes.wasm" {}
+    "https://github.com/dj95/zjstatus/releases/latest/download/zjstatus.wasm" {}
 }
 
 // Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP
